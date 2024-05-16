@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div id="app">
     <UserPosts.vue />
@@ -28,3 +29,14 @@ import UserPosts from '@/components/UserPosts.vue'; // Import komponen UserPosts
   opacity: 0;
 }
 </style>
+=======
+<script setup lang="ts"></script>
+
+<template>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+</template>
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b

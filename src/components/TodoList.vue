@@ -117,7 +117,11 @@
       <input
         ref="inputRef"
         v-model="inputText"
+<<<<<<< HEAD
         class="inline-block mx-auto px-3 py-2 peer w-full rounded-lg border-2 border-solid border-red-700 placeholder-transparent focus:outline-none"
+=======
+        class="inline-block mx-auto px-3 py-2 peer w-full rounded-lg border-2 border-solid border-cyan-700 placeholder-transparent focus:outline-none"
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
         :class="{ 'border-red-700': showInputErrorMessage }"
         type="text"
         name="task"
@@ -171,7 +175,11 @@
         <div
           v-for="item in filteredTodoList"
           :key="item.id"
+<<<<<<< HEAD
           class="relative mt-2 px-4 py-2 bg-red-300 rounded cursor-pointer"
+=======
+          class="relative mt-2 px-4 py-2 bg-grey-300 rounded cursor-pointer"
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
           :class="{ 'text-slate-500': item.status === 'done' }"
           @click="toggleStatus(item)"
         >
@@ -193,7 +201,11 @@
             >
               <button
                 v-if="canEditText && targetTask.id === item.id"
+<<<<<<< HEAD
                 class="text-red-700 hover:text-red-500"
+=======
+                class="text-cyan-700 hover:text-cyan-500"
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
                 type="button"
                 @click.self="saveEditTask"
               >
@@ -201,7 +213,11 @@
               </button>
               <button
                 v-else
+<<<<<<< HEAD
                 class="text-red-700 hover:text-red-500"
+=======
+                class="text-cyan-700 hover:text-cyan-500"
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
                 type="button"
                 @click.self="openEdit(item)"
               >
@@ -217,7 +233,11 @@
             </div>
           </div>
 
+<<<<<<< HEAD
           <div class="shrink-0 text-right text-sm text-red-500 leading-4">
+=======
+          <div class="shrink-0 text-right text-sm text-slate-500 leading-4">
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
             {{ convertDateText(item.updatedAt) }}
           </div>
         </div>

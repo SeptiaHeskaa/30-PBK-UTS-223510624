@@ -4,7 +4,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
+<<<<<<< HEAD
     redirect: { name: 'todoList' },
+=======
+    redirect: { name: 'MY Activity' },
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
   },
   {
     path: '/todo',

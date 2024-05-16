@@ -6,7 +6,11 @@
 
 @layer base {
   html {
+<<<<<<< HEAD
     font-family: 'TIMES NEW ROMAN', cursive;
+=======
+    font-family: 'Times new roman', cursive;
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
   }
 }
 
@@ -16,12 +20,20 @@
   }
 
   .page-wrapper {
+<<<<<<< HEAD
     @apply p-4 bg-red-200 rounded-lg shadow;
   }
 
   .btn-primary {
     @apply px-4 py-1 text-sm text-black bg-red-700 rounded-full;
 
+=======
+    @apply p-4 bg-slate-50 rounded-lg shadow;
+  }
+
+  .btn-primary {
+    @apply px-4 py-1 text-sm text-zinc-100 bg-zinc-500 rounded-full;
+>>>>>>> 11054b7bd8c7598d222c8ffda395ef3b18a97d5b
   }
 }
 
